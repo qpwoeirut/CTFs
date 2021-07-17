@@ -1,0 +1,1 @@
+flag{a long long long local fake flag}
