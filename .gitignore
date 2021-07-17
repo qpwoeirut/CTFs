@@ -3,6 +3,8 @@
 .DS_Store
 .idea
 
+venv
+
 .metadata
 .cproject
 .project
