@@ -4,8 +4,8 @@ Tags: Cryptography<br>
 Author: Will Hong / LT 'Syreal' Jones
 
 > **Description**<br>
-We found a leak of a blackmarket website's login credentials. Can you find the password of the user `cultiris` and successfully decrypt it?
-Download the leak [here](https://artifacts.picoctf.net/c/534/leak.tar).
+We found a leak of a blackmarket website's login credentials. Can you find the password of the user `cultiris` and successfully decrypt it?<br>
+Download the leak [here](https://artifacts.picoctf.net/c/534/leak.tar). <br>
 The first user in `usernames.txt` corresponds to the first password in `passwords.txt`. The second user corresponds to the second password, and so on.
 
 Find the index of the correct username and use that to find the password, which is ROT13 encoded.

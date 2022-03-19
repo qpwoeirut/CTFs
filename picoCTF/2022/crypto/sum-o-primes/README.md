@@ -4,7 +4,7 @@ Tags: Cryptography, RSA<br>
 Author: Joshua Inscoe
 
 > **Description**<br>
-We have so much faith in RSA we give you not just the product of the primes, but their sum as well!<br>
+We have so much faith in RSA we give you not just the product of the primes, but their sum as well!
 > * [gen.py](https://artifacts.picoctf.net/c/184/gen.py)
 > * [output.txt](https://artifacts.picoctf.net/c/184/output.txt)
 
