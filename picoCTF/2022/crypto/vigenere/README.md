@@ -3,7 +3,6 @@
 Tags: Cryptography<br>
 Author: Will Hong
 
-**substitution0**
 > **Description**<br>
 Can you decrypt this message?
 Decrypt this [message](https://artifacts.picoctf.net/c/533/cipher.txt) using this key "CYLAB".
