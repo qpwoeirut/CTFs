@@ -1,6 +1,6 @@
 # substitution0
 
-Tags: Cryptography<br>
+Tags: Cryptography, Substitution<br>
 Author: Will Hong
 
 **substitution0**
