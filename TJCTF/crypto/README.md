@@ -26,12 +26,39 @@ To find the flag, we offset in the other direction.
 
 
 ## factor-master
-Python and SymPy too slow, used C++ GMP
+> Author: nthistle<br>
+> Every CTF has to have a factoring challenge! Let's see if you can factor all of these.
+>
+> `nc tjc.tf 31782`
+> 
+> Downloads: [server.py](https://tjctf-2022.storage.googleapis.com/uploads/5c29a4b9974d755d7b249f6cf40219a718221921471038cdd1fd1b88dc7fb483/server.py)
+
+We're given three challenges to factor RSA moduli.
+The first challenge has p < 2<sup>44</sup> and can be solved with Pollard-Rho.
+The second has `p` and `q` close together and can be solved with Fermat's Factorization.
+The third has a smooth `p-1` and can be solved with Pollard's p-1 algorithm.
+
+I originally implemented these algorithms in Python, but they were too slow since I was using an inefficient version of the p-1 algorithm.
+I spent a while trying to optimize things before giving up and rewriting it in C++ with GMP with a Python program to facilitate communication with the server.
 
 `tjctf{S0_y0u_r34lly_c4n_F4c7t0r_4ny7th1nG_c36f63cfe73c}`
 
 
 ## morph-master
+> Author: nthistle<br>
+> My friend Pascal made this new cryptosystem and challenged me to encrypt without the full public key! Can you help me?
+> 
+> `nc tjc.tf 31996`
+> 
+> Downloads: [server.py](https://tjctf-2022.storage.googleapis.com/uploads/4271ffe4511bb0241893a5bf1636d7b5ccd5a3852bd79afd4d46907cc39f4cc9/server.py)
+
+This is an implementation of the [Paillier cryptosystem](https://en.wikipedia.org/wiki/Paillier_cryptosystem), which is the first result from searching "Pascal cryptosystem".
+We need to encrypt a constant message `m` given the encryption of `4` without knowing the entire public key.
+
+The Wikipedia article mentions that this system allows for homomorphic addition and multiplication of plaintexts.
+In particular, raising a ciphertext to a constant `k` will create a ciphertext whose decryption is `k` times the original plaintext mod `n`.
+We can set `k = 4^-1 * m` to get the flag.
+
 
 `tjctf{M0rph1Ng_1S_pr3t7y_c0ol_1snt_it?}`
 
