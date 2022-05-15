@@ -1,0 +1,11 @@
+from utils.basics import hex_to_ascii
+from utils.rsa.rsa_util import plaintext_pn
+
+n = 1216177716507739302616478655910148392804849
+e = 65537
+c1 = 257733734393970582988408159581244878149116
+c2 = 843105902970788695411197846605744081831851
+
+p = 1033247481589406269253  # http://factordb.com/index.php?query=1216177716507739302616478655910148392804849
+
+print(hex_to_ascii(plaintext_pn(c1, e, p, n)) + hex_to_ascii(plaintext_pn(c2, e, p, n)))
