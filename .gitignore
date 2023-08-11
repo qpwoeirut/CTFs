@@ -34,4 +34,5 @@ venv
 /InCTF/unsolved/crypto/poly_rsa/fx_mod_p.txt
 /UIUCTF/unsolved/zip_heck
 /LITCTF/2022/misc/RythmsDoubleIdentity
-
+/picoCTF/2023/rev/mac.app/Contents/Resources/Data/sharedassets0.assets.resS
+/picoCTF/2023/forensics/disk.flag.img

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<div id="output">Hello There</div>
+</body>
+<script>
+  // https://stackoverflow.com/questions/5202296/add-a-hook-to-all-ajax-requests-on-a-page
+  const outputElem = document.getElementById("output");
+  function createLine(text) {
+    const elem = document.createElement("p");
+    elem.textContent = text;
+    return elem;
+  }
+  (function() {
+      const origOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function() {
+          outputElem.appendChild(createLine("request started"));
+          this.addEventListener('load', function() {
+              outputElem.appendChild(createLine('request completed!'));
+              outputElem.appendChild(createLine(this.responseText));
+          });
+          origOpen.apply(this, arguments);
+      };
+  })();
+
+  // LITCTF{wow_i_actually_love_the_fetch}
+</script>
+</html>
