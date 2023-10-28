@@ -1,0 +1,55 @@
+Gonna use [] for lists to avoid confusing parentheses
+
+
+['pugnacious', 'wallaby', 'savant', 'zarf']
+= cdr(
+    [a, 'pugnacious', 'wallaby', 'savant', 'zarf']
+)
+= cdr(car(
+    [[a, 'pugnacious', 'wallaby', 'savant', 'zarf'], b...]
+))
+= cdr(car(cdr(
+    [c, [a, 'pugnacious', 'wallaby', 'savant', 'zarf'], b...]
+)))
+= cdr(car(cdr(car(
+    [[c, [a, 'pugnacious', 'wallaby', 'savant', 'zarf'], b...], d...]
+))))
+= cdr(car(cdr(car(car(
+    [[[c, [a, 'pugnacious', 'wallaby', 'savant', 'zarf'], b...], d...], e...]
+)))))
+= cdr(car(cdr(car(car(cdr(
+    [f, [[c, [a, 'pugnacious', 'wallaby', 'savant', 'zarf'], b...], d...], e...]
+))))))
+= cdr(car(cdr(car(car(cdr(cdr(
+    [g, f, [[c, [a, 'pugnacious', 'wallaby', 'savant', 'zarf'], b...], d...], e...]
+)))))))
+= cdr(car(cdr(car(car(cdr(cdr(car(
+    [[g, f, [[c, [a, 'pugnacious', 'wallaby', 'savant', 'zarf'], b...], d...], e...], h...]
+))))))))
+= cdr(car(cdr(car(car(cdr(cdr(car(car(
+    [[[g, f, [[c, [a, 'pugnacious', 'wallaby', 'savant', 'zarf'], b...], d...], e...], h...], i...]
+)))))))))
+= cdr(car(cdr(car(car(cdr(cdr(car(car(cdr(
+    [j, [[g, f, [[c, [a, 'pugnacious', 'wallaby', 'savant', 'zarf'], b...], d...], e...], h...], i...]
+))))))))))
+= cdr(car(cdr(car(car(cdr(cdr(car(car(cdr(cdr(
+    [k, j, [[g, f, [[c, [a, 'pugnacious', 'wallaby', 'savant', 'zarf'], b...], d...], e...], h...], i...]
+)))))))))))
+= cdr(car(cdr(car(car(cdr(cdr(car(car(cdr(cdr(car(
+    [[k, j, [[g, f, [[c, [a, 'pugnacious', 'wallaby', 'savant', 'zarf'], b...], d...], e...], h...], i...], l...]
+))))))))))))
+= cdr(car(cdr(car(car(cdr(cdr(car(car(cdr(cdr(car(
+    [['ascent', 'xray', [['yarbrough', 'jackal', [['minstrel', [['nevermore','outcast','kitten', 'victor'], 'pugnacious', 'wallaby', 'savant', 'zarf'], 'tango'], 'ultimatum'], 'papyrus'], 'quill'], 'renegade'], 'llama','ghost','hellscape','industrious','zombification','bestial','cadre','dark','efficacious','foundational']
+))))))))))))
+= cdr(car(cdr(car(car(cdr(cdr(car(car(cdr(cdr(car(
+    (('ascent', 'xray', (('yarbrough', 'jackal', (('minstrel', (('nevermore','outcast','kitten', 'victor'), 'pugnacious', 'wallaby', 'savant', 'zarf'), 'tango'), 'ultimatum'), 'papyrus'), 'quill'), 'renegade'), 'llama','ghost','hellscape','industrious','zombification','bestial','cadre','dark','efficacious','foundational')
+))))))))))))
+
+('ascent','xray','yarbrough','jackal','minstrel','nevermore','outcast','kitten',
+'victor','pugnacious','wallaby','savant','zarf','tango','ultimatum','papyrus',
+'quill','renegade','llama','ghost','hellscape','industrious','zombification',
+'bestial','cadre','dark','efficacious','foundational')
+
+echo "cdr(car(cdr(car(car(cdr(cdr(car(car(cdr(cdr(car((('ascent', 'xray', (('yarbrough', 'jackal', (('minstrel', (('nevermore','outcast','kitten', 'victor'), 'pugnacious', 'wallaby', 'savant', 'zarf'), 'tango'), 'ultimatum'), 'papyrus'), 'quill'), 'renegade'), 'llama','ghost','hellscape','industrious','zombification','bestial','cadre','dark','efficacious','foundational')))))))))))))" | nc -nv 143.198.226.223 50000
+
+flag{BABY_you_can_DRIVE_my_CDR!!!}
