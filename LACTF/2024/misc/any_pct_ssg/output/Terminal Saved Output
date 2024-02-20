@@ -1,0 +1,47 @@
+Last login: Sat Feb 17 20:00:21 on ttys001
+qpwoeirut@Stanleys-MacBook-Pro-3 any_pct_ssg % optrun brute time
+Compiled!
+Searching in [4053239664633446, 4093239664633446)
+Range = 40000000000000
+4064038460528559
+4069300207844603
+4079835892835445
+4090738163284684
+4091802831484920
+     4315.79 real     29546.00 user        33.65 sys
+qpwoeirut@Stanleys-MacBook-Pro-3 any_pct_ssg % vim brute.cpp 
+qpwoeirut@Stanleys-MacBook-Pro-3 any_pct_ssg % optrun brute time
+Compiled!
+Searching in [4093239664633446, 4133239664633446)
+Range = 40000000000000
+4105862284039626
+4108529765332047
+4125916106851934
+4126135940321518
+     6654.57 real     46301.80 user        81.17 sys
+qpwoeirut@Stanleys-MacBook-Pro-3 any_pct_ssg %                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
