@@ -1,0 +1,5 @@
+sympy
+pwntools
+Pillow
+PyJWT
+pycryptodome
