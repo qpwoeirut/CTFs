@@ -16,6 +16,9 @@ For organized directories, all challenges should be in their own folders.
 If a challenge is not in `unsolved` or `solved_by_teammates` then it should have a writeup in the README.
 Every organized directory will also have a README.
 
+Writeups from teammates:
+* [UIUCTF 2024](https://github.com/EnchLolz/UIUCTF-2024)
+
 Also, a lot of the solver scripts will use a library called `utils`.
 This is a mashup of random python scripts that I found useful for CTFs.
 It's not public because I'm very very mean.
