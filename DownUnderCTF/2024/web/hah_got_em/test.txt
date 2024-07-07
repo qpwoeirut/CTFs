@@ -1,0 +1,8 @@
+file with text in it
+
+curl --request POST "https://web-hah-got-em-20ac16c4b909.2024.ductf.dev/forms/chromium/convert/html" \
+--form file=@index.html \
+--form file=@test.txt \
+-o out.pdf \
+--header 'Content-Type: multipart/form-data' \
+--form waitDelay=2s

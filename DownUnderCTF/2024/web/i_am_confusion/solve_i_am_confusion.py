@@ -1,0 +1,7 @@
+import jwt
+
+
+token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VyIjoicXAiLCJpYXQiOjE3MjAyMjY1MDF9.GLudlL3pAofHa9OXVHl-Q16V_vqAMSAAn3mlzKl-2Db9LBPphmY-RmwK2Y-wNSzzvdAoxGJuP-JojuaEUhiAN2RZ6OvY3xRkxVPlgBxxCfqmeE8sOtJwEIkdvp1KWKutkFlVeLqMA1g8raLox3soRinv9TC_4OnKk4XW6mGESXZhz-PMqMWzTegDExMe5Wdr08G_mqfOiBrvau_InidQWvFV7hvyGvQzUfhyQT1rjLhma5-KFs6V1c-1Fa1nugsgSfWOezoa6oIcbW5MnPhZWLgPHRoXVoAyfueEV7-opfMYKUIKaN3WDS3u609GkSS2GlQ56jqvJPRSwjbH-g_sNw"
+
+
+jwt.decode(token, "key", algorithms="RS256", verify=True)
