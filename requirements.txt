@@ -3,3 +3,5 @@ pwntools
 Pillow
 PyJWT
 pycryptodome
+scapy
+aiohttp
