@@ -1,0 +1,6 @@
+https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%BA%AA%E6%A9%8B_Da_Xi_Bridge_-_panoramio.jpg
+LITCTF{24.885,121.284}
+
+https://en.wikipedia.org/wiki/John_Parker_(captain)
+https://www.findagrave.com/memorial/1857/john-parker
+LITCTF{42.450,-71.233}
