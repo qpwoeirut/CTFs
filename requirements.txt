@@ -1,7 +1,8 @@
-sympy
-pwntools
-Pillow
-PyJWT
-pycryptodome
-scapy
-aiohttp
+aiohttp~=3.10.5
+requests~=2.32.3
+Pillow~=10.4.0
+pwntools~=4.13.0
+pycryptodome~=3.20.0
+PyJWT~=2.9.0
+scapy~=2.5.0
+sympy~=1.13.2
