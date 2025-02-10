@@ -1,0 +1,1 @@
+atob(decodeURIComponent(atob("JTNEJTNEUWZsSlglNUJPTERfREFUQSU1RG85MWNzeFdZMzlWZXNwbmVwSjMlNUJPTERfREFUQSU1RGY5bWI3JTVCT0xEX0RBVEElNURHZGpGR2I")).replaceAll("[OLD_DATA]", "Z").split("").reverse().join(""))
