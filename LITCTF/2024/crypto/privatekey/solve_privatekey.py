@@ -71,7 +71,7 @@ def main():
     print(m.to_bytes((m.bit_length() + 7) // 8))
 
     # Forgot I already had this implemented
-    from utils.rsa.rsa_wiener_attack import recover_d
+    from utils.cryptography.rsa.rsa_wiener_attack import recover_d
     d = recover_d(e, N)
     m = pow(c, d, N)
 
